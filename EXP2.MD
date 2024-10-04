@@ -1,7 +1,7 @@
 # Ex.No: 2   Matrix Multiplication 
 
 ### DATE:                                                                             
-### REGISTER NUMBER : 212222040141
+### REGISTER NUMBER : 212222040148
 
 ### AIM: 
 Write a python program for matrix multiplication and inspect for failures.
