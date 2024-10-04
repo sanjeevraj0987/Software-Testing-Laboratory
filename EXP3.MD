@@ -1,7 +1,7 @@
 # Ex.No: 3 To check the number is prime or not and inspect for failures.
  
 ### DATE:                                                                            
-### REGISTER NUMBER : 
+### REGISTER NUMBER : 212222040148
 ### AIM: 
 Write a python program to check the number is prime or not and inspect for failures.
  
@@ -16,6 +16,28 @@ Write a python program to check the number is prime or not and inspect for failu
 8. Stop the program.
 
 ### Program:
+num = input("Enter a number: ")
+flag = 0
+if num.isnumeric():
+    z = int(num)
+    if z == 2:
+        flag = 1  
+    elif z > 2:
+        for i in range(2, z // 2 + 1):  
+            if z % i == 0:
+                flag = 0  
+                break
+        else:
+            flag = 1  
+    else:
+        flag = 0  
+    
+    if flag == 1:
+        print("Prime Number")
+    else:
+        print("Not a Prime Number")
+else:
+    print("Enter a Positive Number")
 
 
 
@@ -30,6 +52,22 @@ Write a python program to check the number is prime or not and inspect for failu
 
 
 ### Output:
+
+C:\Users\SEC\Desktop\stl>python3 primeno.py Enter a number: 6 Not a Prime Number
+C:\Users\SEC\Desktop\stl>python3 primeno.py Enter a number: say Enter a Positive
+Number
+C:\Users\SEC\Desktop\stl>python3 primeno.py Enter a number: *65 Enter a Positive
+Number
+C:\Users\SEC\Desktop\stl>python3 primeno.py Enter a number: -98 Enter a Positive
+Number
+C:\Users\SEC\Desktop\stl>python3 primeno.py Enter a number: 0 Not a Prime Number
+C:\Users\SEC\Desktop\stl>python3 primeno.py Enter a number: 123456 Not a Prime
+Number
+C:\Users\SEC\Desktop\stl>python3 primeno.py Enter a number: Enter a Positive Number
+C:\Users\SEC\Desktop\stl>python3 primeno.py Enter a number: 90/87 Enter a Positive
+Number
+C:\Users\SEC\Desktop\stl>python3 primeno.py Enter a number: #009 Enter a Positive
+Number
 
 
 
